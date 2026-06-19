@@ -1,0 +1,297 @@
+.dashboard {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1.75rem 1.5rem 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.dashboard-header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.85rem;
+  color: #111827;
+}
+
+.dashboard-header p {
+  margin: 0;
+  color: #6b7280;
+}
+
+.status-message {
+  text-align: center;
+  padding: 2rem 1rem;
+  font-size: 1rem;
+  color: #4b5563;
+}
+
+.status-error {
+  color: #b91c1c;
+}
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.card h2 {
+  margin: 0 0 1rem;
+  font-size: 1.2rem;
+  color: #111827;
+}
+
+/* Overview metrics */
+.metrics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.metric-card {
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
+  border-radius: 10px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.metric-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.metric-label {
+  font-size: 0.85rem;
+  color: #6b7280;
+}
+
+.metric-value {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+.empty-text {
+  color: #9ca3af;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Tables */
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 480px;
+}
+
+.data-table th,
+.data-table td {
+  text-align: left;
+  padding: 0.75rem 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+  font-size: 0.92rem;
+}
+
+.data-table th {
+  color: #6b7280;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  letter-spacing: 0.03em;
+}
+
+.clickable-row {
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
+
+.clickable-row:hover,
+.clickable-row:focus-visible {
+  background-color: #f3f4f6;
+  outline: none;
+}
+
+/* Share referral */
+.share-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+}
+
+.share-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.share-field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+}
+
+.share-row {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.share-row input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background-color: #f9fafb;
+  font-size: 0.9rem;
+}
+
+.secondary-button {
+  background-color: #111827;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.2s ease;
+}
+
+.secondary-button:hover {
+  background-color: #1f2937;
+}
+
+.copy-message {
+  margin: 0.75rem 0 0;
+  color: #059669;
+  font-size: 0.85rem;
+}
+
+/* All referrals toolbar */
+.referrals-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.25rem;
+}
+
+.referrals-toolbar h2 {
+  margin: 0;
+  flex: 1 0 100%;
+}
+
+.search-form {
+  display: flex;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 220px;
+}
+
+.search-form input {
+  flex: 1;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.sort-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.sort-control label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #374151;
+  white-space: nowrap;
+}
+
+.sort-control select {
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.pagination button {
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.pagination button:hover:not(:disabled) {
+  background-color: #f3f4f6;
+}
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.page-numbers {
+  display: flex;
+  gap: 0.35rem;
+}
+
+.page-number.active {
+  background-color: #2563eb;
+  color: #ffffff;
+  border-color: #2563eb;
+}
+
+.pagination-footer {
+  text-align: center;
+  margin: 0.9rem 0 0;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 640px) {
+  .dashboard {
+    padding: 1.25rem 1rem 2.5rem;
+  }
+
+  .card {
+    padding: 1.1rem;
+  }
+
+  .referrals-toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
