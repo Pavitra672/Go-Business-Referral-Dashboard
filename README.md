@@ -90,3 +90,6 @@ Pagination (10 rows per page) is implemented entirely on the client, since the A
 - The sign-in button is never disabled due to empty fields — every click triggers an API call so users see the API's own validation message.
 - Dates are normalized from ISO strings to `YYYY/MM/DD`.
 - Currency values use `Intl.NumberFormat` with `style: "currency"`, `currency: "USD"`, and `maximumFractionDigits: 0`.
+
+Demo Link:
+https://go-business-referral-dashboard-umiy-8jlfbwkb6.vercel.app/
